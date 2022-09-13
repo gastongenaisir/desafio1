@@ -15,3 +15,19 @@ function calcular() {
   }
 }
 calcular();
+
+const productos = [
+  { id: 1 , nombre:"carne", precio: 220},
+  { id: 2 , nombre:"jyq", precio: 200},
+  { id: 3 , nombre:"pollo", precio: 210},
+];
+
+let nombre = prompt("¿Quiere saber los precios de cada empanada? Opciones: carne, jyq o pollo");
+let producto = productos.find(item => item.nombre === nombre);
+let mensaje = `
+Id: ${producto.id}
+Nombre: ${producto.nombre}
+Precio: $${producto.precio}
+`;
+alert(mensaje);
+
