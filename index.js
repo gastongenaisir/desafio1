@@ -31,3 +31,7 @@ Precio: $${producto.precio}
 `;
 alert(mensaje);
 
+let reload = document.getElementById ("reiniciar")
+reload.addEventListener('click', _ => {
+  location.reload();
+});
